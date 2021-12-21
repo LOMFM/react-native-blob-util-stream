@@ -1,0 +1,81 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ReactNativeBlobUtil"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml
+10
+11    <!-- Required to access Google Play Licensing -->
+12    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+12-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:5:5-73
+12-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:5:22-70
+13
+14    <!-- Required to download files from Google Play -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:8:5-67
+15-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:8:22-64
+16
+17    <!--
+18         Required to keep CPU alive while downloading files
+19        (NOT to keep screen awake)
+20    -->
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:12:5-68
+21-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:12:22-65
+22
+23    <!--
+24         Required to poll the state of the network connection
+25        and respond to changes
+26    -->
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:16:5-79
+27-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:16:22-76
+28
+29    <!-- Required to check whether Wi-Fi is enabled -->
+30    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+30-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:19:5-76
+30-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:19:22-73
+31
+32    <!-- Required to read and write the expansion files on shared storage -->
+33    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+33-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:22:5-81
+33-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:22:22-78
+34
+35    <!-- Required to read and write the expansion files on shared storage for Android 11 -->
+36    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+36-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:25:5-80
+36-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:25:22-77
+37
+38    <!-- Required to to download files without a notification -->
+39    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+39-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:28:5-87
+39-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:28:22-85
+40
+41    <application android:label="@string/app_name" >
+41-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:30:5-41:19
+41-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:30:18-50
+42        <provider
+42-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:32:9-40:20
+43            android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
+43-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:33:13-70
+44            android:authorities="${applicationId}.provider"
+44-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:34:13-60
+45            android:exported="false"
+45-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:35:13-37
+46            android:grantUriPermissions="true" >
+46-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:36:13-47
+47            <meta-data
+47-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:37:13-39:58
+48                android:name="android.support.FILE_PROVIDER_PATHS"
+48-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:38:17-67
+49                android:resource="@xml/provider_paths" />
+49-->D:\Projects\crmgrow\crmgrow_mobile\node_modules\react-native-blob-util\android\src\main\AndroidManifest.xml:39:17-55
+50        </provider>
+51    </application>
+52
+53</manifest>
